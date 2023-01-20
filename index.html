@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-<title>Resume</title>
+<title>Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,7 +15,6 @@ body {
 </style>
 <body>
 
-
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> About</a>
@@ -24,7 +24,7 @@ body {
 
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">works</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Works</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
   </div>
 </div>
@@ -32,10 +32,10 @@ body {
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home"></div>
   <div class="w3-content w3-container w3-padding-64" id="about">
     <h1 class="w3-center" style="font-family:'Courier New', Courier, monospace">Welcome to my website! </h1>
-    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="cvPhoto.jpg.jpeg" style="width: 40%; height: 60%; display: block; margin-left: auto; margin-right: auto;   margin-top: 50px;  ">
+    <img class="image" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="cvPhoto.jpg.jpeg">
    
     <div class="w3-row"> 
-    <h1 id="line"> <i class="fa-sharp fa-solid fa-user-graduate" style="font-size:25px; color:black; margin-top: 100px; "></i> Education</h1>
+    <h1 class="title" id="line"> <i class="fa-sharp fa-solid fa-user-graduate"></i> Education</h1>
     </div>
     <div class="education">
     <h3>2017 - 2020 YSMU Heraci high school.</h3>
@@ -45,7 +45,7 @@ body {
    </div>
     
    <div class="w3-row">
-        <h1 id="line"> <i class="fa-solid fa-language"  style="font-size:25px; color:black; margin-top: 100px;"></i> Languages</h1> 
+        <h1 class="title" id="line"> <i class="fa-solid fa-language"></i> Languages</h1> 
     </div>
     
     <p class="w3-wide"> Armenian</p>
@@ -63,7 +63,7 @@ body {
   
   
   <div class="w3-row">
-      <h1 id="line"> <i class="fa-solid fa-desktop" style="font-size:25px; color:black; margin-top: 100px;"></i> Programming skills</h1>
+      <h1 class="title" id="line"> <i class="fa-solid fa-desktop"></i> Programming skills</h1>
      </div>
 
           <h5> <i class="fa-brands fa-html5" style="font-size:18px; color:black"></i> HTML5</h5>
@@ -71,13 +71,13 @@ body {
           <h5><i class="fa-brands fa-js" style="font-size:18px; color:black"></i> JavaScript</h5>
   
    <div class="w3-row">
-  <h1 id="line" > <i class="fa-solid fa-certificate" style="font-size:25px; color:black; margin-top: 100px;"></i> Certifications</h1>
+  <h1  class="title" id="line" > <i class="fa-solid fa-certificate" ></i> Certifications</h1>
   <h4>Cisco Networking Academy - Cybersecurity Essentials</h4> 
    </div>
 
 <div class="w3-row">
 
-  <h1 id="line" > <i class="fa-solid fa-list" style="font-size:25px; color:black; margin-top: 100px;"></i> Interests</h1>
+  <h1 class="title" id="line" > <i class="fa-solid fa-list"></i> Interests</h1>
   <h5> <i class="fa-solid fa-basketball" style="font-size:18px; color:black"></i> Playing basketball</h5>
   <h5> <i class="fa-solid fa-masks-theater" style="font-size:18px; color:black"></i> Theatre</h5>
   <h5> <i class="fa-solid fa-newspaper" style="font-size:18px; color:black"></i> Participate in professional seminars</h5>
@@ -88,14 +88,22 @@ body {
 </div>
 
 
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h1 class="w3-center" id="line" style="font-size:30px; color:black; margin-top: 100px; font-family: 'Courier New', Courier, monospace;"> My works</h1>
-</div>
+<div class="w3-content w3-container" id="portfolio"> 
+  <h1 class="w3-center" id="line" style="font-size:30px; color:black;  font-family: 'Courier New', Courier, monospace;"> My works</h1>
+  <ul>
+    <li>
+      <a href="https://github.com/AniTovmasyan/toDo">My To Do List</a>
+    </li>
+    <li>
+      <a href="https://github.com/AniTovmasyan/slider">Slider</a>
+    </li>
+  </ul>
+  </div>
 
 
 
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h1 class="w3-center" id="line" style="font-size:30px; color:black; margin-top: 100px; font-family: 'Courier New', Courier, monospace;"> Contact</h1>
+  <h1 class="w3-center" id="line" style="font-size:30px; color:black; margin-top: 50px; font-family: 'Courier New', Courier, monospace;"> Contact</h1>
   
   <div class="w3-row w3-padding-32 w3-section">
     
@@ -127,17 +135,6 @@ body {
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 </footer>
  
-  <script>
-  function bigImg(x) {
-    x.style.height = "65%";
-    x.style.width = "45%";
-  }
-  
-  function normalImg(x) {
-    x.style.height = "60%";
-    x.style.width = "40%";
-  }
- 
-  </script>
+  <script src="portfolio.js"></script>
 </body>
 </html>
